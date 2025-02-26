@@ -1,4 +1,16 @@
-# dcimg2tiff.m
+# DCIMG_opener.py
+### Introduction
+Here I wrote this Jython script file to directly read Hamamatsu dcimg files with Fiji ImageJ based on a previous code.
+<em><b>Update Feb. 26, 2025  We added support for the new dcimg format acquired by HCImage Ver. > 5.0.</b></em>
+
+### Requirements
+- ImageJ/Fiji
+
+### Usage
+For anyone who wants to process dcimg files (acquired by Hamamatsu cameras), you can put the Jython file into **`[your ImageJ folder]//plugins//Scripts//`**, and then you can open the dcimg files as virtual stacks from the Plugins menu.
+Note that, if you are using an old dcimg-api, you may need to change `crop_info = read_crop_info(fID, hdr, deprecated=False)` in line 100 to `crop_info = read_crop_info(fID, hdr, deprecated=True)`.
+
+# dcimg.m
 ### Introduction
 Here I wrote a Matlab class file to directly read Hamamatsu dcimg files.
 
