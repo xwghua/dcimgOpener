@@ -1,7 +1,7 @@
 # DCIMG_opener.py
 ### Introduction
 Here I wrote this Jython script file to directly read Hamamatsu dcimg files with Fiji ImageJ based on a previous code.
-<em><b>Update Feb. 26, 2025  We added support for the new dcimg format acquired by HCImage Ver. > 5.0.</b></em>
+<em><b>Update Feb. 26, 2025  We added support for the new dcimg format acquired by HCImage Ver. > 5.0, and fixed the middle-left 4-px mismatch issue. </b></em>
 
 ### Requirements
 - ImageJ/Fiji
